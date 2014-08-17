@@ -26,8 +26,8 @@ public class ServiceControlFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mActivity = getActivity();
-        mRootView = inflater.inflate(R.layout.service_control_fragment,container,false);
-        ipText = mRootView.findViewsWithText(R.id.ip_address);
+        mRootView = inflater.inflate(R.layout.service_control_fragment, container, false);
+        ipText = (TextView) mRootView.findViewById(R.id.ip_address);
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 }
